@@ -197,7 +197,6 @@ exec_always xrandr --output HDMI-0 --primary --auto --output DVI-D-0 --auto --le
 exec_always feh --bg-scale /home/alex/Pictures/wp9784008.jpg
 exec --no-startup-id dunst -config /home/alex/.config/dunst/dunstrc
 
-
 # i3lock Keybinding
 bindsym $mod+l exec i3lock
 
