@@ -94,7 +94,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -193,7 +193,7 @@ bar {
 # Startup Commands
 #exec --no-startup-id bash ~/scipts/fix_scripts/fix-display.sh
 
-exec_always xrandr --output HDMI-0 --primary --auto --output DVI-D-0 --auto --left-of HDMI-0
+exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --rate 144 --output DVI-D-0 --auto --left-of HDMI-0
 exec_always feh --bg-scale /home/alex/Pictures/wp9784008.jpg
 exec --no-startup-id dunst -config /home/alex/.config/dunst/dunstrc
 
@@ -214,5 +214,8 @@ for_window [class="Prospect Mail"] 		move to workspace $ws9 	#EMAIL
 # for_window [title="Microsoft Teams Notification"] floating enable
 
 # Move Workspaces
-bindsym $mod+Ctrl+greater move workspace to output right
-bindsym $mod+Ctrl+less move workspace to output left
+bindsym $mod+Ctrl+greater 	move workspace to output right
+bindsym $mod+Ctrl+less 		move workspace to output left
+
+# Application Launcher Keybinds
+bindsym $mod+e 			exec thunar
