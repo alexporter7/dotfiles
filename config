@@ -224,3 +224,7 @@ bindsym $mod+Shift+s 		exec spectacle --background --copy-image
 # Sound Options
 bindsym $mod+KP_Add	 	exec pacmd set-sink-port alsa_output.pci-0000_09_00.4.analog-stereo analog-output-lineout
 bindsym $mod+KP_Subtract	exec pacmd set-sink-port alsa_output.pci-0000_09_00.4.analog-stereo analog-output-headphones
+
+# Program Launchers
+bindsym $mod+Shift+F1 			exec teams --no-sandbox
+bindsym $mod+Shift+F2 			exec multimc
